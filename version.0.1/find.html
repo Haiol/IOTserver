@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+    <style>
+        
+            html {
+                background-color: #56baed;
+            }
+            h4{
+                text-align:left;
+            }
+           
+            body {
+                font-family: "Poppins", sans-serif;
+                height: 100vh;
+            }
+            .card-body{
+                width: 600px;
+                min-width: 50px;
+            }
+          .wrapper {
+            display: flex;
+            align-items: center;
+            flex-direction: column; 
+            justify-content: center;
+            width: 100%;
+            min-height: 100%;
+            padding: 20px;
+            
+            } 
+            .card{
+                box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+                  text-align: center;
+
+            }
+            .btn{
+                background-color: #56baed;
+                border: none;
+                -webkit-box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+                 box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+              -webkit-border-radius: 5px 5px 5px 5px;
+                border-radius: 5px 5px 5px 5px;
+                margin: 0px 20px 40px 0px;
+                -webkit-transition: all 0.3s ease-in-out;
+                -moz-transition: all 0.3s ease-in-out;
+                -ms-transition: all 0.3s ease-in-out;
+                -o-transition: all 0.3s ease-in-out;
+                transition: all 0.3s ease-in-out;
+            }
+            .btn:hover{
+                background-color: #39ace7;
+            }
+            .btn-left{
+                width: 100%;
+                align-content: left;
+            }
+  
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container wrapper">
+        <div class="card bg-wight">
+        <article class="card-body mx-auto">
+            <h4 class="card-title mt-3 "> Find ID</h4>
+            <br>
+            <form action="findid.php" method="post">
+                <div class="form-group input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+                     </div>
+                    <input name="email" id="email" class="form-control" placeholder="Email address" type="email">
+                </div> <!-- form-group// -->
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-block">Find ID</button>
+            </div> <!-- form-group// -->     
+            </form>
+            <h4 class="card-title mt-3 "> Find Password</h4>
+            <br>
+            <form action="findpwd.php" method="post">
+                <div class="form-group input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+                     </div>
+                    <input name="id" id="id" class="form-control" placeholder="userID" type="text">
+                </div> <!-- form-group// -->
+
+                <div class="form-group input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+                     </div>
+                    <input name="name" id="name" class="form-control" placeholder="Your name" type="text">
+                </div> <!-- form-group// -->
+               
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-block"> Find Password </button>
+            </div> <!-- form-group// -->     
+            </form>
+
+
+        </article>
+        </div> <!-- card.// -->
+        
+        </div> 
+        <!--container end.//-->
+        
+       
+        </article>
+    
+</body>
+</html>

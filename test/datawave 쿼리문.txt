@@ -1,0 +1,3 @@
+CREATE TABLE `datawave` ( `user_code` INT(20) NOT NULL , `data_name` VARCHAR(50) NULL DEFAULT NULL , `temp` FLOAT(30) NULL DEFAULT NULL , `humm` FLOAT(30) NULL DEFAULT NULL , `create_date` DATETIME ) ENGINE = InnoDB;
+
+ALTER TABLE `datawave` ADD FOREIGN KEY (`user_code`) REFERENCES `users`(`user_code`) ON DELETE RESTRICT ON UPDATE RESTRICT;
